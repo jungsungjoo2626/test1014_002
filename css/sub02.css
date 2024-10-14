@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*공통*/
+#wrap{min-width: 320px; background-color: #000; position: relative;}
+.inner {
+  max-width: 1700px;
+  padding: 0 15%;
+  margin: 0 auto;
+}
+
+
+/*header*/
+
+header {position: absolute; top: 0; left: 0; width: 100%; height:80px; line-height: 80px; z-index:9; padding: 20px;}
+header .inner {display: flex; justify-content: space-between; align-items: center; max-width: 100%;}
+header h1 {position: absolute; left:5%; top:2vh; position: fixed; z-index: 100;} 
+
+/*main*/
+.g-box{width: 1420px; margin: 0 auto; display: flex; justify-content: space-between; padding : 250px 0 300px 0; flex-wrap: wrap;}
+.g-box img{width: 270px; height: 270px; object-fit: cover; padding-bottom: 17px;}
+
+
+/*footer*/
+footer{background-color: #222; color: #fff; padding: 50px 0; }
+footer .footer-box{width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;}
+footer .footer-box .right-box{display: inline-block;}
+
+/*footer 모바일*/
+@media screen and (max-width : 768px) {
+  footer{font-size: 1rem;} 
+}
+
